@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nicholas Cameron Portfolio</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <style>
+         .navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+  .container {
+    padding: 80px 120px;
+  }
+          .bg-1 {
+/*    background: #1B3C61;*/
+/*    background: #40476D;*/
+    background: #28587B;
+/*    background: #145C9E; */
+    color: #bdbdbd;
+  }
+         .bg-2 {
+    background-color: #2d2d30;
+    color: #ffffff;
+             
+  }
+  .bg-1 h3 {color: #fff;}
+ }
+  </style>
+</head>
+<body id="BIO" data-spy="scroll" data-target=".navbar" data-offset="50">
+   
+    
+    
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#BIO">BIO</a></li>
+       <!-- <li><a href="#slide2">slide2</a></li> -->
+        <li><a href="#slide5">Trailers</a></li>
+        <!-- <li><a href="#slide6">slide6</a></li> -->
+        <li><a href="#slide7">Contact</a></li>
+        <!-- <li><a href="#slide8">slide8</a></li> -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- slide1 -->
+<div class="container text-center">
+    
+  <h4>Nicholas Cameron</h4>
+    <p>Creator of trailers for films and video games.</p>
+    <p>Music and pacing are what I pay most attention to.</p>
+    <p>Would like to to do more :)</p>
+    </div>
+  </div>
+</div>
+
+<!-- slide2 -->
+</div>
+<div class="bg-1">
+<div id="slide2" class="container text-center">
+    <img src="img/background2.png" alt="HTML tutorial" style="width:800px;height:1200px;">
+</div>
+
+<!-- slide5 -->
+</div>
+<div id="slide5" class="container text-center">
+  
+    <p>Trailers made for Project Reality: BF2, a total conversion mod for Battlefield 2. For several years I have filmed and edited the promotional material of Project Reality with the help of many members of it's community.</p>
+    <p></p>
+ 
+ <iframe width="960" height="540"
+src="https://www.youtube.com/embed/V0XuOm3h_Z0">
+</iframe>
+    <p>
+    </p>
+    
+    <iframe width="960" height="540"
+src="https://www.youtube.com/embed/8vJPJyw35Jo">
+</iframe>
+    <p>
+    </p>
+    
+    <iframe width="960" height="540"
+src="https://www.youtube.com/embed/2DB2YDuG6Ms">
+</iframe>
+    <p>
+    </p>
+    
+    <iframe width="960" height="540"
+src="https://www.youtube.com/embed/17uNG04C0gk">
+</iframe>
+    <p>
+    </p>
+    
+    <iframe width="960" height="540"
+src="https://www.youtube.com/embed/zKlF_iPmzF4">
+</iframe>
+    <p>
+    </p>
+
+ 
+
+ 
+</div>
+
+<!-- slide6 -->
+</div>
+<div class="bg-1">
+<div id="slide6" class="container text-center">
+    <img src="img/background2.png" alt="HTML tutorial" style="width:800px;height:1200px;">
+</div>
+
+<!-- slide7 -->
+</div>
+<div id="slide7" class="container text-center">
+    <p> <span class="glyphicon glyphicon-envelope"></span> nicholascameron14@gmail.com</p>
+    <p><a href="https://www.linkedin.com/in/nicholas-cameron-5421a826b/">LinkedIn</a></p>
+    <p><a href="https://www.youtube.com/@camo14">YouTube</a></p>
+    <p><a href="https://https://www.behance.net/nicholascameron2">Behance</a></p>
+</div>
+
+
+
+
+
+
+<div class="bg-1">
+<footer class="text-center">
+  <a class="up-arrow" href="#BIO" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
